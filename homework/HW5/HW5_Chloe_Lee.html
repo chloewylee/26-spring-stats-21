@@ -7858,7 +7858,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [114]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [249]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># no need to modify this code</span>
@@ -7885,7 +7885,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [170]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [250]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Circle</span><span class="p">:</span>
@@ -7913,7 +7913,10 @@ a.anchor-link {
     <span class="n">bottom_right</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">box</span><span class="o">.</span><span class="n">corner</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">box</span><span class="o">.</span><span class="n">width</span>
     <span class="n">bottom_right</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">box</span><span class="o">.</span><span class="n">corner</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">box</span><span class="o">.</span><span class="n">height</span>
     
-    <span class="n">flag</span> <span class="o">=</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">top_left</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="ow">and</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">top_right</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="ow">and</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">bottom_left</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="ow">and</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">bottom_right</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+    <span class="n">flag</span> <span class="o">=</span> <span class="p">(</span><span class="n">point_in_circle</span><span class="p">(</span><span class="n">top_left</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> 
+            <span class="ow">and</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">top_right</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+            <span class="ow">and</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">bottom_left</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> 
+            <span class="ow">and</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">bottom_right</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">flag</span>
     
 <span class="k">def</span><span class="w"> </span><span class="nf">rect_circle_overlap</span><span class="p">(</span><span class="n">box</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
@@ -7928,7 +7931,10 @@ a.anchor-link {
     <span class="n">bottom_right</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">box</span><span class="o">.</span><span class="n">corner</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">box</span><span class="o">.</span><span class="n">width</span>
     <span class="n">bottom_right</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">box</span><span class="o">.</span><span class="n">corner</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">box</span><span class="o">.</span><span class="n">height</span>
     
-    <span class="n">flag</span> <span class="o">=</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">top_left</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="ow">or</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">top_right</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="ow">or</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">bottom_left</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="ow">or</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">bottom_right</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+    <span class="n">flag</span> <span class="o">=</span> <span class="p">(</span><span class="n">point_in_circle</span><span class="p">(</span><span class="n">top_left</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> 
+            <span class="ow">or</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">top_right</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> 
+            <span class="ow">or</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">bottom_left</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> 
+            <span class="ow">or</span> <span class="n">point_in_circle</span><span class="p">(</span><span class="n">bottom_right</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">flag</span>
 </pre></div>
 </div>
@@ -7959,7 +7965,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [116]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [251]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># your code</span>
@@ -7989,8 +7995,8 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>{'width': 100, 'height': 200, 'corner': &lt;__main__.Point object at 0x12804b470&gt;}
-{'center': &lt;__main__.Point object at 0x12804a7e0&gt;, 'radius': 75}
+<pre>{'width': 100, 'height': 200, 'corner': &lt;__main__.Point object at 0x128049f10&gt;}
+{'center': &lt;__main__.Point object at 0x128048bf0&gt;, 'radius': 75}
 </pre>
 </div>
 </div>
@@ -8001,7 +8007,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [117]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [252]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">point_in_circle</span><span class="p">(</span><span class="n">box</span><span class="o">.</span><span class="n">corner</span><span class="p">,</span> <span class="n">circle</span><span class="p">))</span>
@@ -8043,7 +8049,7 @@ True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [118]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [253]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># code that defines Time class and some functions needed for 16.1</span>
@@ -8086,7 +8092,7 @@ True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [119]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [254]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># write your function here</span>
@@ -8120,7 +8126,7 @@ True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [120]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [255]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test case:</span>
@@ -8134,6 +8140,9 @@ True
 
 <span class="n">distance</span> <span class="o">=</span> <span class="mf">13.1</span> <span class="c1"># miles</span>
 <span class="n">pace</span> <span class="o">=</span> <span class="n">mul_time</span><span class="p">(</span><span class="n">race_time</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="n">distance</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Running pace per mile:'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+<span class="n">print_time</span><span class="p">(</span><span class="n">pace</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8147,6 +8156,7 @@ True
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Half marathon time 01:34:05
+Running pace per mile: 00:07:10
 </pre>
 </div>
 </div>
@@ -8172,7 +8182,7 @@ True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [121]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [256]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
@@ -8186,7 +8196,7 @@ True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [122]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [257]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># example usage</span>
@@ -8215,11 +8225,12 @@ True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [123]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [258]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">new_date</span><span class="o">.</span><span class="n">today</span><span class="p">())</span>
-<span class="n">days_of_the_week</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Monday'</span><span class="p">,</span> <span class="s1">'Tuesday'</span><span class="p">,</span> <span class="s1">'Wednesday'</span><span class="p">,</span> <span class="s1">'Thursday'</span><span class="p">,</span> <span class="s1">'Friday'</span><span class="p">,</span> <span class="s1">'Saturday'</span><span class="p">,</span> <span class="s1">'Sunday'</span><span class="p">]</span>
+<span class="n">days_of_the_week</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Monday'</span><span class="p">,</span> <span class="s1">'Tuesday'</span><span class="p">,</span> <span class="s1">'Wednesday'</span><span class="p">,</span> <span class="s1">'Thursday'</span><span class="p">,</span> <span class="s1">'Friday'</span><span class="p">,</span> 
+                    <span class="s1">'Saturday'</span><span class="p">,</span> <span class="s1">'Sunday'</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">days_of_the_week</span><span class="p">[</span><span class="n">new_date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">weekday</span><span class="p">()])</span>
 </pre></div>
 </div>
@@ -8258,7 +8269,7 @@ Friday
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [124]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [259]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">birthdate</span> <span class="o">=</span> <span class="s2">"12/25/1999"</span> <span class="c1"># month/day/year</span>
@@ -8272,7 +8283,7 @@ Friday
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [166]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [260]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># print time until birthday</span>
@@ -8283,23 +8294,30 @@ Friday
     
     <span class="c1"># convert birthdate string to date object</span>
     <span class="n">birthdate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">birthdate</span><span class="p">,</span> <span class="s2">"%m/</span><span class="si">%d</span><span class="s2">/%Y"</span><span class="p">)</span><span class="o">.</span><span class="n">date</span><span class="p">()</span>
-    <span class="n">not_passed</span> <span class="o">=</span> <span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">birthdate</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">birthdate</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> <span class="c1"># checks if birthday has passed this year or not</span>
-    <span class="n">age</span> <span class="o">=</span> <span class="n">today</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="n">birthdate</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="n">not_passed</span> <span class="c1"># if bday has not passed, subtracts 1 from age (since not_passed is T/F --&gt; 1/0)</span>
+    <span class="c1"># checks if birthday has passed this year or not</span>
+    <span class="n">not_passed</span> <span class="o">=</span> <span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">birthdate</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">birthdate</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> 
+    <span class="c1"># if bday has not passed, subtracts 1 from age (T/F --&gt; 1/0)</span>
+    <span class="n">age</span> <span class="o">=</span> <span class="n">today</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="n">birthdate</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="n">not_passed</span> 
     <span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
 
     <span class="n">next_birthday_year</span> <span class="o">=</span> <span class="n">today</span><span class="o">.</span><span class="n">year</span> <span class="k">if</span> <span class="n">not_passed</span> <span class="k">else</span> <span class="n">today</span><span class="o">.</span><span class="n">year</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="n">next_birthday_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="n">next_birthday_year</span><span class="p">,</span> <span class="n">birthdate</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">birthdate</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> <span class="c1"># identifies date of next birthday</span>
-
-    <span class="n">next_birthday_midnight</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">next_birthday_date</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">min</span><span class="p">)</span> <span class="c1"># identifies midnight of next birthday</span>
-    
-    <span class="n">time_until_birthday</span> <span class="o">=</span> <span class="n">next_birthday_midnight</span> <span class="o">-</span> <span class="n">time_now</span> <span class="c1"># calculates time until start of next birthday</span>
-    <span class="n">seconds_until_birthday</span> <span class="o">=</span> <span class="n">time_until_birthday</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> <span class="c1"># converts time until birthday to seconds</span>
+    <span class="c1"># identifies date of next birthday</span>
+    <span class="n">next_birthday_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="n">next_birthday_year</span><span class="p">,</span> <span class="n">birthdate</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> 
+                                       <span class="n">birthdate</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> 
+    <span class="c1"># identifies midnight of next birthday</span>
+    <span class="n">next_birthday_midnight</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">next_birthday_date</span><span class="p">,</span> 
+                                                       <span class="n">datetime</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">min</span><span class="p">)</span> 
+    <span class="c1"># calculates time until start of next birthday</span>
+    <span class="n">time_until_birthday</span> <span class="o">=</span> <span class="n">next_birthday_midnight</span> <span class="o">-</span> <span class="n">time_now</span> 
+    <span class="c1"># converts time until birthday to seconds</span>
+    <span class="n">seconds_until_birthday</span> <span class="o">=</span> <span class="n">time_until_birthday</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> 
 
     <span class="n">days</span><span class="p">,</span> <span class="n">remainder</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="n">seconds_until_birthday</span><span class="p">,</span> <span class="mi">24</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span>
     <span class="n">hours</span><span class="p">,</span> <span class="n">remainder</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="n">remainder</span><span class="p">,</span> <span class="mi">3600</span><span class="p">)</span>
     <span class="n">minutes</span><span class="p">,</span> <span class="n">seconds</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="n">remainder</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
     
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Time until next birthday: </span><span class="si">{}</span><span class="s2"> days, </span><span class="si">{}</span><span class="s2"> hours, </span><span class="si">{}</span><span class="s2"> minutes, </span><span class="si">{}</span><span class="s2"> seconds"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">days</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">hours</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">minutes</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">seconds</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Time until next birthday: </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">days</span><span class="p">)</span><span class="si">}</span><span class="s2"> days, </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">hours</span><span class="p">)</span><span class="si">}</span><span class="s2"> hours, "</span>
+          <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">minutes</span><span class="p">)</span><span class="si">}</span><span class="s2"> minutes, </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">seconds</span><span class="p">)</span><span class="si">}</span><span class="s2"> seconds"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8310,7 +8328,7 @@ Friday
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [167]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [261]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">bday_info</span><span class="p">(</span><span class="n">birthdate</span><span class="p">)</span>
@@ -8327,7 +8345,7 @@ Friday
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>26
-Time until next birthday: 202 days, 21 hours, 56 minutes, 1 seconds
+Time until next birthday: 202 days, 3 hours, 7 minutes, 42 seconds
 </pre>
 </div>
 </div>
@@ -8338,7 +8356,7 @@ Time until next birthday: 202 days, 21 hours, 56 minutes, 1 seconds
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [168]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [262]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">birthdate2</span> <span class="o">=</span> <span class="s2">"3/26/1972"</span>
@@ -8352,7 +8370,7 @@ Time until next birthday: 202 days, 21 hours, 56 minutes, 1 seconds
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [169]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [263]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># print time until birthday</span>
@@ -8370,7 +8388,7 @@ Time until next birthday: 202 days, 21 hours, 56 minutes, 1 seconds
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>54
-Time until next birthday: 293 days, 21 hours, 55 minutes, 55 seconds
+Time until next birthday: 293 days, 3 hours, 7 minutes, 42 seconds
 </pre>
 </div>
 </div>
@@ -8394,7 +8412,7 @@ Time until next birthday: 293 days, 21 hours, 55 minutes, 55 seconds
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [129]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [264]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">person1</span> <span class="o">=</span> <span class="s2">"12/25/1999"</span>
@@ -8409,11 +8427,12 @@ Time until next birthday: 293 days, 21 hours, 55 minutes, 55 seconds
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [265]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">double_day</span><span class="p">(</span><span class="n">day1</span><span class="p">,</span> <span class="n">day2</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">'''Takes in two birthdates and returns the date when one person is exactly twice as old as the other.</span>
+<span class="w">    </span><span class="sd">'''Takes in two birthdates and returns the date when one person is </span>
+<span class="sd">    exactly twice as old as the other.</span>
 <span class="sd">    </span>
 <span class="sd">    attributes: day1, day2</span>
 <span class="sd">    '''</span>
@@ -8431,15 +8450,18 @@ Time until next birthday: 293 days, 21 hours, 55 minutes, 55 seconds
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Double Day: </span><span class="si">{</span><span class="n">double_day</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'%m/</span><span class="si">%d</span><span class="s1">/%Y'</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
 
-<span class="c1"># calcualting ages by borrowing in the case that the day/month of the double day is earlier than the birthdate's day/month</span>
+<span class="c1"># calcualting ages by borrowing in the case that the day/month of the </span>
+<span class="c1"># double day is earlier than the birthdate's day/month</span>
     <span class="n">p1_years</span> <span class="o">=</span> <span class="n">double_day</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="n">person1_birthdate</span><span class="o">.</span><span class="n">year</span>
     <span class="n">p1_months</span> <span class="o">=</span> <span class="n">double_day</span><span class="o">.</span><span class="n">month</span> <span class="o">-</span> <span class="n">person1_birthdate</span><span class="o">.</span><span class="n">month</span>
     <span class="n">p1_days</span> <span class="o">=</span> <span class="n">double_day</span><span class="o">.</span><span class="n">day</span> <span class="o">-</span> <span class="n">person1_birthdate</span><span class="o">.</span><span class="n">day</span>
     
     <span class="k">if</span> <span class="n">p1_days</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">p1_months</span> <span class="o">-=</span> <span class="mi">1</span>
-        <span class="c1"># shift back to last day of previous month to find how many days in that month</span>
+        <span class="c1"># shift back to last day of previous month to find how many days </span>
+        <span class="c1"># in that month</span>
         <span class="n">prev_month</span> <span class="o">=</span> <span class="n">double_day</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">day</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">p1_days</span> <span class="o">+=</span> <span class="n">prev_month</span><span class="o">.</span><span class="n">day</span>
     <span class="k">if</span> <span class="n">p1_months</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">p1_years</span> <span class="o">-=</span> <span class="mi">1</span>
         <span class="n">p1_months</span> <span class="o">+=</span> <span class="mi">12</span>
@@ -8456,9 +8478,11 @@ Time until next birthday: 293 days, 21 hours, 55 minutes, 55 seconds
     <span class="k">if</span> <span class="n">p2_months</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">p2_years</span> <span class="o">-=</span> <span class="mi">1</span>
         <span class="n">p2_months</span> <span class="o">+=</span> <span class="mi">12</span>
-    
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Person 1's Age on Double Day: </span><span class="si">{</span><span class="n">p1_years</span><span class="si">}</span><span class="s2"> years, </span><span class="si">{</span><span class="n">p1_months</span><span class="si">}</span><span class="s2"> months, </span><span class="si">{</span><span class="n">p1_days</span><span class="si">}</span><span class="s2"> days"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Person 2's Age on Double Day: </span><span class="si">{</span><span class="n">p2_years</span><span class="si">}</span><span class="s2"> years, </span><span class="si">{</span><span class="n">p2_months</span><span class="si">}</span><span class="s2"> months, </span><span class="si">{</span><span class="n">p2_days</span><span class="si">}</span><span class="s2"> days"</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Person 1's Age on Double Day: "</span>
+          <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">p1_years</span><span class="si">}</span><span class="s2"> years, </span><span class="si">{</span><span class="n">p1_months</span><span class="si">}</span><span class="s2"> months, </span><span class="si">{</span><span class="n">p1_days</span><span class="si">}</span><span class="s2"> days"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Person 2's Age on Double Day: "</span>
+          <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">p2_years</span><span class="si">}</span><span class="s2"> years, </span><span class="si">{</span><span class="n">p2_months</span><span class="si">}</span><span class="s2"> months, </span><span class="si">{</span><span class="n">p2_days</span><span class="si">}</span><span class="s2"> days"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8469,7 +8493,7 @@ Time until next birthday: 293 days, 21 hours, 55 minutes, 55 seconds
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [131]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [266]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">double_day</span><span class="p">(</span><span class="n">person1</span><span class="p">,</span> <span class="n">person2</span><span class="p">)</span>
@@ -8498,7 +8522,7 @@ Person 2's Age on Double Day: 59 years, 4 months, 20 days
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [132]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [267]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test case</span>
@@ -8530,7 +8554,7 @@ Person 2's Age on Double Day: 12 years, 9 months, 27 days
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [133]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [268]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test case</span>
@@ -8575,7 +8599,7 @@ Person 2's Age on Double Day: 8 years, 4 months, 12 days
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [134]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [269]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Leave this code unchanged</span>
@@ -8668,7 +8692,7 @@ Person 2's Age on Double Day: 8 years, 4 months, 12 days
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [135]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [270]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># results of a few time tests. your later results should match these</span>
@@ -8706,7 +8730,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [136]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [271]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># modify this class</span>
@@ -8791,7 +8815,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [137]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [272]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">main</span><span class="p">()</span>
@@ -8847,7 +8871,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [138]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [273]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># `Badkangaroo.py`</span>
@@ -8888,7 +8912,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [139]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [274]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">kanga</span> <span class="o">=</span> <span class="n">Kangaroo</span><span class="p">(</span><span class="s1">'Kanga'</span><span class="p">)</span>
@@ -8907,7 +8931,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [140]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [275]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">kanga</span><span class="p">)</span>
@@ -8927,7 +8951,7 @@ Example of polymorphism
     'wallet'
     'car keys'
     'candy'
-    &lt;__main__.Kangaroo object at 0x128041130&gt;
+    &lt;__main__.Kangaroo object at 0x11001ecc0&gt;
 </pre>
 </div>
 </div>
@@ -8938,7 +8962,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [141]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [276]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">roo</span><span class="p">)</span>
@@ -8958,7 +8982,7 @@ Example of polymorphism
     'wallet'
     'car keys'
     'candy'
-    &lt;__main__.Kangaroo object at 0x128041130&gt;
+    &lt;__main__.Kangaroo object at 0x11001ecc0&gt;
 </pre>
 </div>
 </div>
@@ -8991,7 +9015,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [142]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [277]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># `GoodKangaroo.py`</span>
@@ -9068,7 +9092,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [143]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [278]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">kanga</span> <span class="o">=</span> <span class="n">Kangaroo</span><span class="p">(</span><span class="s1">'Kanga'</span><span class="p">)</span>
@@ -9087,7 +9111,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [144]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [279]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">kanga</span><span class="p">)</span>
@@ -9106,7 +9130,7 @@ Example of polymorphism
 <pre>Kanga has pouch contents:
     'wallet'
     'car keys'
-    &lt;__main__.Kangaroo object at 0x128027a10&gt;
+    &lt;__main__.Kangaroo object at 0x12804a6c0&gt;
 </pre>
 </div>
 </div>
@@ -9117,7 +9141,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [145]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [280]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">roo</span><span class="p">)</span>
@@ -9189,7 +9213,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [146]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [281]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Do not change this code block</span>
@@ -9305,13 +9329,13 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [147]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [282]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Do not change this code block</span>
-<span class="c1">## PokerHand.py : An incomplete implementation of a class that represents a poker hand, and</span>
-<span class="c1">## some code that tests it. The current definition of has_flush may or may not be adequate</span>
-<span class="c1">## for the final solution.</span>
+<span class="c1">## PokerHand.py : An incomplete implementation of a class that represents </span>
+<span class="c1">## a poker hand, and some code that tests it. The current definition of </span>
+<span class="c1">## has_flush may or may not be adequate for the final solution.</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">PokerHand</span><span class="p">(</span><span class="n">Hand</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Represents a poker hand."""</span>
     
@@ -9360,7 +9384,7 @@ Example of polymorphism
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [148]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [283]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># no need to change this code block</span>
@@ -9388,22 +9412,22 @@ Example of polymorphism
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Queen of Clubs
-King of Clubs
-2 of Diamonds
+<pre>2 of Diamonds
+5 of Diamonds
 6 of Hearts
+8 of Hearts
+4 of Spades
+5 of Spades
 7 of Spades
-8 of Spades
-King of Spades
 False
 
+Ace of Clubs
 4 of Clubs
 5 of Clubs
-6 of Clubs
+Queen of Clubs
 Ace of Diamonds
-5 of Hearts
-10 of Hearts
-5 of Spades
+4 of Diamonds
+Queen of Diamonds
 False
 
 </pre>
@@ -9416,7 +9440,7 @@ False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [149]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [284]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># no need to change this code block</span>
@@ -9487,7 +9511,7 @@ True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [150]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [285]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your work:</span>
@@ -9648,7 +9672,7 @@ True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [151]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [286]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test case; do not modify</span>
@@ -9693,7 +9717,7 @@ fullhouse
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [152]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [287]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># you may add your own code chunks to troubleshoot your hand methods</span>
@@ -9708,7 +9732,7 @@ fullhouse
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[152]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[287]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>True</pre>
 </div>
@@ -9731,7 +9755,7 @@ fullhouse
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [153]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [288]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test case; do not modify</span>
@@ -9776,7 +9800,7 @@ straightflush
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [154]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [289]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test case; do not modify</span>
@@ -9832,7 +9856,7 @@ straightflush
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [155]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [290]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test case; do not modify</span>
@@ -9888,7 +9912,7 @@ straight
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [156]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [291]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test case; do not modify</span>
@@ -9944,7 +9968,7 @@ straight
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [157]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [292]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test case; do not modify</span>
@@ -10000,7 +10024,7 @@ flush
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [158]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [293]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test case; do not modify</span>
@@ -10059,7 +10083,7 @@ twopair
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [159]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [294]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># no need to change this code block</span>
@@ -10067,7 +10091,8 @@ twopair
 <span class="w">    </span><span class="sd">"""Represents a deck of cards that can deal poker hands."""</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">deal_hands</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_cards</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">num_hands</span><span class="o">=</span><span class="mi">7</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">"""Deals hands from the deck and returns Hands. The hands are classified before they are returned.</span>
+<span class="w">        </span><span class="sd">"""Deals hands from the deck and returns Hands. The hands </span>
+<span class="sd">        are classified before they are returned.</span>
 <span class="sd">        num_cards: cards per hand</span>
 <span class="sd">        num_hands: number of hands</span>
 
@@ -10090,7 +10115,7 @@ twopair
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [160]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [295]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># no need to change this code block</span>
@@ -10117,7 +10142,7 @@ twopair
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [161]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [296]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test code. no need to modify</span>
@@ -10149,7 +10174,8 @@ twopair
             <span class="n">odds</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">'inf'</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">odds</span> <span class="o">=</span> <span class="p">(</span><span class="n">total</span> <span class="o">-</span> <span class="n">freq</span><span class="p">)</span> <span class="o">/</span> <span class="n">freq</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="si">{:}</span><span class="s1"> happens with probability </span><span class="si">{:.3f}</span><span class="s1">%; odds against: </span><span class="si">{:.2f}</span><span class="s1"> : 1'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">odds</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="si">{:}</span><span class="s1"> happens with probability </span><span class="si">{:.3f}</span><span class="s1">%; odds against: </span><span class="si">{:.2f}</span><span class="s1"> : '</span> \
+        <span class="s1">'1'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">odds</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -10160,7 +10186,7 @@ twopair
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [162]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [297]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># test code</span>
@@ -10198,15 +10224,15 @@ twopair
 18000
 19000
 100000.0 hands dealt:
-straightflush happens with probability 0.031%; odds against: 3224.81 : 1
-fourkind happens with probability 0.155%; odds against: 644.16 : 1
-fullhouse happens with probability 2.563%; odds against: 38.02 : 1
-flush happens with probability 3.002%; odds against: 32.31 : 1
-straight happens with probability 4.692%; odds against: 20.31 : 1
-threekind happens with probability 4.771%; odds against: 19.96 : 1
-twopair happens with probability 23.299%; odds against: 3.29 : 1
-pair happens with probability 43.849%; odds against: 1.28 : 1
-highcard happens with probability 17.638%; odds against: 4.67 : 1
+straightflush happens with probability 0.019%; odds against: 5262.16 : 1
+fourkind happens with probability 0.180%; odds against: 554.56 : 1
+fullhouse happens with probability 2.577%; odds against: 37.80 : 1
+flush happens with probability 2.929%; odds against: 33.14 : 1
+straight happens with probability 4.665%; odds against: 20.44 : 1
+threekind happens with probability 4.790%; odds against: 19.88 : 1
+twopair happens with probability 23.527%; odds against: 3.25 : 1
+pair happens with probability 43.766%; odds against: 1.28 : 1
+highcard happens with probability 17.547%; odds against: 4.70 : 1
 </pre>
 </div>
 </div>
